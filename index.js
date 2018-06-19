@@ -28,7 +28,7 @@ app.get("/:id", (req, res) => {
     if (req.params.id !== "favicon.ico") {
 
         let movieId = req.params.id;
-        console.log(req.params.id);
+        //console.log(req.params.id);
     
         let requestUrl = omdbOrigin + movieId + apiKey;
     
