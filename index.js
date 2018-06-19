@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:id", (req, res) => {
-    if (req.params.id !== "favicon.ico") {
+    // if (req.params.id !== "favicon.ico") {
 
         let movieId = req.params.id;
         //console.log(req.params.id);
@@ -88,7 +88,7 @@ app.get("/:id", (req, res) => {
             });
     
         });
-    }
+    // }
 
 });
 
