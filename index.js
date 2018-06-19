@@ -26,8 +26,9 @@ app.get("/", (req, res) => {
 
 app.get("/:id", (req, res) => {
     let id = req.params.id;
+    let requestUrl = omdbOrigin + id + apiKey;
 
-    http.get(omdbOrigin + id + apiKey, (apiRes) => {
+    http.get(requestUrl, (apiRes) => {
 
         let unparsedData = "";
         apiRes.on("data", (chunk) => {
@@ -41,6 +42,7 @@ app.get("/:id", (req, res) => {
             // Object.values(data)[17];
             //console.log(Object.values(data)[13]);
             if (data.Response === "False") {
+                console.log(requestUrl);
                 console.log(data);
                 throw new Error("An error occurred fetching the data.");
             }
