@@ -73,7 +73,7 @@ app.get("/:id", (req, res) => {
                 metascore: data.Metascore,
                 imdbRating: data.imdbRating,
                 imdbVotes: data.imdbVotes,
-                imdbID: id,
+                //imdbID: id,
                 type: data.Type,
                 DVD: data.DVD,
                 boxOffice: data.BoxOffice,
