@@ -1,3 +1,13 @@
 body {
     background-color: bisque;
 }
+
+li {
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.poster-container {
+    display: flex;
+    justify-content: center;
+}

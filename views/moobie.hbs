@@ -1,31 +1,27 @@
-{{!-- {{#each entries}}
-    <div>{{this}}<div>
-{{/each}}
-
-<p>{{fullData}}</p> --}}
-
+<div class="poster-container">
+    <img src="{{poster}}" class="poster">
+</div>
 <h1>{{title}}</h1>
 <ul>
-    <li>{{year}}</li>
-    <li>{{rated}}</li>
-    <li>{{released}}</li>
-    <li>{{runtime}}</li>
-    <li>{{director}}</li>
-    <li>{{writers}}</li>
-    <li>{{actors}}</li>
-    <li>{{plot}}</li>
-    <li>{{language}}</li>
-    <li>{{country}}</li>
-    <li>{{awards}}</li>
-    <li><img src="{{poster}}"></li>
-    <li>{{metascore}}</li>
-    <li>{{imdbRating}}</li>
-    <li>{{imdbVotes}}</li>
-    <li>{{imdbID}}</li>
-    <li>{{type}}</li>
-    <li>{{DVD}}</li>
-    <li>{{boxOffice}}</li>
-    <li>{{production}}</li>
-    <li>{{website}}</li>
-    
+    <li>Rated: {{rated}}</li>
+    <li>Date Released: {{released}}</li>
+    <li>Length: {{runtime}}</li>
+    <li>Director: {{director}}</li>
+    <li>Writers: {{writers}}</li>
+    <li>Actors: {{actors}}</li>
+    <li>Plot synopsis: {{plot}}</li>
+    <li>Language: {{language}}</li>
+    <li>Country filmed: {{country}}</li>
+    <li>Awards: {{awards}}</li>
+    <li>Metascore: {{metascore}}</li>
+    <li>IMDB Rating: {{imdbRating}}</li>
+    <li>IMDB Votes: {{imdbVotes}}</li>
+    <li>IMDB ID: {{imdbID}}</li>
+    <li>Media: {{type}}</li>
+    <li>DVD Release Date: {{DVD}}</li>
+    <li>Box Office Earnings: {{boxOffice}}</li>
+    <li>Production Company: {{production}}</li>
+    <li><a href="{{website}}" target="_blank">Website</a></li> 
 </ul>
+
+<a href="/">Back to Home</a>
