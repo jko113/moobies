@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
 
 app.get("/:id", (req, res) => {
     let movieId = req.params.id;
+    console.log(req.params.id);
 
     let requestUrl = omdbOrigin + movieId + apiKey;
 
