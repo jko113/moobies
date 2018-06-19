@@ -41,7 +41,7 @@ app.get("/:id", (req, res) => {
             // Object.values(data)[17];
             //console.log(Object.values(data)[13]);
             if (data.Response === "False") {
-                //console.log(Object.keys(data));
+                console.log(data);
                 throw new Error("An error occurred fetching the data.");
             }
             // res.send(JSON.parse(data));
